@@ -28,56 +28,121 @@
         </nav>
         <main>
             <section id= "mtb-bikes">
+                <img src="images/MTB-bike.jpg" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
                 <h2>Mountain Bikes</h2>
                 <p>Ready for your off-road adventures? Rocket bikes has a bike for every terrain thanks to our precise steering, celebrated
                     susspension, stability and outstanding handling</p>
             </section>
 
             <section id = "rd-bikes">
+                <img src="images/Road-bike.jpg" alt ="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
                 <h2>Road Bikes</h2>
                 <p>Engineered for optimal performance our Road Bikes are aerodinamic machines that are fast, smooth, confortable and featherlight</p>
             </section>
 
             <section id = "e-bikes">
+                <img src="images/E-bike-town.jpg" alt ="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
                 <h2>E-Bikes</h2>
                 <p>Our E-bikes are a great way to stay fit and have fun, so leave the car at home and check out our selection.</p>
             </section>
 
             <section id = "kids-bikes">
+                <img src="images/Kida-bike.jpg" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
                 <h2>Kids Bikes</h2>
                 <p>Here you'll find all our bikes for kids focused on fun, functional, and well-fitting bikes with the coolest designs.</p>
             </section>
-
-        </main>
-        <aside>
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>If you have questions. prolems or warranty issues please contact us</p>
-                <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
-                    <div>
-                        <label for="fullName">Name</label><br>
-                        <input type="text" id="fullName" name="fullName" placeholder="Your full name"><br>
-                        <br>
-                    </div>
     
-                    <div>
-                        <label for="my-email">Email</label><br>
-                        <input type="email" id="my-email" name="my-email" placeholder="Enter your email address"><br>
-                        <br>
-                    </div>
-    
-                    <div>
-                        <label for="message">Message</label><br>
-                        <input type="text" id="message" name="message" placeholder="What can I help you with?"><br>
-                        <br>
-                    </div>
-    
-    
-                    <input type="button" class="button" value="Submit">
-    
-                </form>
+            <section id="game">
+                    <h2>SEND IT!</h2>
+                    <p> Click the button for the chance to win a bike new bike!</p>
+                    <p>If you roll a double four you win!</p>
+                    <span id="random1"></span>
+                    <span id="random2"></span>
+                    <p id="sendItMsg"></p>
+                    <button id="gamePlay">Play!</button>
+                    
             </section>
-        </aside>
+
+            <section id="cart1">
+                <h2>Get the Gear!</h2>
+                <section id="products1">
+                    <h3 class="sr-only">Our Products</h3>
+                    <section>
+                        <img src="images/gears.jpg" alt="placeholder image that is 200 by 200 pixels - your images should have appropriate alt text">
+                        <h4>Product Name 1</h4>
+                        <p>$0.00</p>
+                        <button id="pn1">Add To Cart</button>
+                    </section>
+                    <section>
+                        <img src="images/gears.jpg" alt="placeholder image that is 200 by 200 pixels - your images should have appropriate alt text">
+                        <h4>Product Name 2</h4>
+                        <p>$0.00</p>
+                        <button id="pn2">Add To Cart</button>
+                    </section>
+                    <section>
+                        <img src="images/gears.jpg" alt="placeholder image that is 200 by 200 pixels - your images should have appropriate alt text">
+                        <h4>Product Name 3</h4>
+                        <p>$0.00</p>
+                        <button id="pn3">Add To Cart</button>
+                    </section>
+                </section>
+                <section id="totals1">
+                    <h3>Cart</h3>
+                    <ul id="itemsList1">
+                        <li>Your Cart is Empty</li>
+                    </ul>
+                    <ul>
+                        <li id="subtotal1">Subtotal: <span>$0.00</span></li>
+                        <li id="tax1">Tax: <span>$0.00</span></li>
+                        <li id="shipping1">Shipping: <span>$0.00</span></li>
+                        <li id="total1">Total: <span>$0.00</span></li>
+                    </ul>
+                    <button id="checkout1">Checkout</button>
+                </section>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>If you have questions, problems or warranty issues please contact us</p>
+                <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                    <fieldset>
+                        <label for="firstName">Fist Name<span class="required">*</span></label>
+                        <input type="text" name="my-first-name" placeholder="(Enter first name)" id="firstName" required>
+            
+                        <label for="lastName">Last Name<span class="required">*</span></label>
+                        <input type="text" name="my-last-name" placeholder="(Enter last name)" id="lastName" required>
+                        <fieldset>
+                            <legend>Contact Method<span class="required">*</span></legend>
+            
+                            <input type="radio" name="contact-pref" id="pref-email" checked>
+                            <label for="pref-email">Email</label>
+            
+                            <input type="radio" name="contact-pref" id="pref-phone">
+                            <label for="pref-phone">Phone</label>
+                        </fieldset>
+                        <fieldset>
+                        <label for="email">Email<span class="required">*</span></label>
+                        <input type="email" name="my-email" placeholder="(Enter Email)" id="email" required>
+
+                       
+                        <label for="phone">Phone<span class="required">*</span></label>
+                        <input type="tel" name="my-phone" placeholder="(Enter telephone number)" id="phone" required>
+                    </fieldset>
+
+                    <label for="message">Message<span class="required">*</span></label>
+                    <textarea id="message" name="my-message"></textarea>
+	
+	                <input type="submit" name="submit" value="Submit">
+                
+                </form>
+                
+            </section>
+        </main>
+        <footer>
+            <p>For Educational Purposes Only</p>
+        </footer>
+        
+        
    
 </body>
 </html>
