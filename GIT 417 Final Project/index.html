@@ -7,17 +7,18 @@
     <title>Rocket Bikes Company</title>
     <meta name="author" content="Jennifer Pelzer">
     <meta name="description" content="GIT 417 Final website project">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href= "styles.css">
     <script> src = "script.js"</script>
 </head>
 <body>
     <header>
-        <a href="#main" class="skip-link">Skip to Main Content</a>
+        <img class="logo" src="images/rocket_bike_logo.jpg" alt="astronauts-cycle-around-saturn-view-scenery-explore-minerals-flat">
         <h1>Rocket Bikes</h1>
-        <img src = "" >
-    </header>
         <nav>
-            <h2>Main Navigation</h2>
+            <h2 class="sr-only">Main Navigation</h2><h2>
             <ul>
                 <li><a href ="#mtb-bikes">Mountain Bikes</a></li>
                 <li><a href = "#rd-bikes">Road Bikes</a></li>
@@ -26,31 +27,126 @@
                 <li><a href = "#contact">Contact Us</a></li>
             </ul>
         </nav>
+    </header>
         <main>
+            <!-- Chistmas specal section with buttons switchers 1-3 -->
+            <section id= "Christmas">
+                <h2>Happy Holidays</h2>
+                <section id="product1" class="currentItem">
+                    <h3>Heading Describing 40% off bikes</h3>
+                    <img src="images/trail_ride_snow.jpg" alt="placeholder">"
+                    <p>Yule hop for joy over our selection of 40% off holiday bike deals!</p>
+                </section>
+
+                <section id="product2" class="hiddenItem">
+                    <h3>Heading Describing Item 2</h3>
+			        <img src="images/gears.jpg" alt="placeholder ">
+			        <p>Paragraph describing item that are great stocking stuffers</p>
+		        </section>
+
+                <section id="product3" class="hiddenItem">
+                    <h3>Heading Describing Item 3</h3>
+			        <img src="images/gears.jpg" alt="placeholder ">
+			        <p>Paragraph describing item that are better than Christmas sweaters</p>
+		        </section>
+
+                <section id="christmasButtons">
+			        <h2 class="sr-only">Click on a Button to View a Product</h2>
+			        <button id="btn1">40% off Select Bikes</button>
+			        <button id="btn2">Stocking stuffers</button>
+			        <button id="btn3">Better that a sweater</button>
+		        </section>
+            </section>
+
+<!-- MTB bike section with buttons switchers 4-7 -->
             <section id= "mtb-bikes">
-                <img src="images/MTB-bike.jpg" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
-                <h2>Mountain Bikes</h2>
-                <p>Ready for your off-road adventures? Rocket bikes has a bike for every terrain thanks to our precise steering, celebrated
-                    susspension, stability and outstanding handling</p>
-            </section>
+                <h2>Mountain Bike</h2>
+                <section id="product4" class="currentItem">
+                    <h3>Heading Describing Item 4</h3>
+                    <img class="heroImg" src="images/MTB-bike.jpg" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                    <p>Ready for your off-road adventures? Rocket bikes has a bike for every terrain thanks to our precise steering, celebrated
+                    susspension, stability and outstanding handling Needs description of MTB bike 1</p>
+                </section>
 
+                    <section id="product5" class="hiddenItem">
+                        <h3>Heading Describing Item 5</h3>
+                        <img src="images/gears.jpg" alt=" text">
+                        <p>Paragraph describing mountain bike 2</p>
+                    </section>
+
+                        <section id="product6" class="hiddenItem">
+                            <h3>Heading Describing Item 6</h3>
+                            <img src="images/gears.jpg" alt=" text">
+                            <p>Paragraph describing mountain bike 3</p>
+                        </section>
+
+                    <section id="mtbButtons">
+                        <h2 class="sr-only">Click on a Button to View a Product</h2>
+                        <button id="btn4">Discover Bike Name 1</button>
+                        <button id="btn5">Discover Bike Name 2</button>
+                        <button id="btn6">Discover Bike Name 3</button>
+                    </section>
+                   
+        <!-- Road bike section with buttons switchers 7-9-->
             <section id = "rd-bikes">
-                <img src="images/Road-bike.jpg" alt ="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
                 <h2>Road Bikes</h2>
-                <p>Engineered for optimal performance our Road Bikes are aerodinamic machines that are fast, smooth, confortable and featherlight</p>
-            </section>
+                <section id="product7" class="currentItem">
+                   <h3>Heading describing item 7</h3>
+                   <img src="images/Road-bike.jpg" alt ="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                    <p>Engineered for optimal performance our Road Bikes are aerodinamic machines that are fast, smooth, confortable and 
+                    featherlight Needs description of road bike 1</p>
+                    </section>
 
-            <section id = "e-bikes">
-                <img src="images/E-bike-town.jpg" alt ="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
-                <h2>E-Bikes</h2>
-                <p>Our E-bikes are a great way to stay fit and have fun, so leave the car at home and check out our selection.</p>
-            </section>
+                    <section id="product8" class="hiddenItem">
+                        <h3>Heading Describing Item 8</h3>
+                        <img src="images/gears.jpg" alt=" text">
+                        <p>Paragraph describing road bike 2</p>
+                    </section>
 
-            <section id = "kids-bikes">
-                <img src="images/Kida-bike.jpg" alt="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                        <section id="product9" class="hiddenItem">
+                            <h3>Heading Describing Item 9</h3>
+                            <img src="images/gears.jpg" alt=" text">
+                            <p>Paragraph describing mountain bike 3</p>
+                        </section>
+
+                <section id="roadButtons">
+                    <h2 class="sr-only">Click on a Button to View a Product</h2>
+                    <button id="btn7">Discover Bike Name 1</button>
+                    <button id="btn8">Discover Bike Name 2</button>
+                    <button id="btn9">Discover Bike Name 3</button>
+                </section>
+             </section>
+
+              <!-- kids bike section with buttons switchers 10-12-->
+            <section id = "kidsBikes">
                 <h2>Kids Bikes</h2>
-                <p>Here you'll find all our bikes for kids focused on fun, functional, and well-fitting bikes with the coolest designs.</p>
-            </section>
+                <section id="product10" class="currentItem">
+                   <h3>Heading describing item 10</h3>
+                   <img src="images/Kida-bike.jpg" alt ="placeholder image that is 600 by 400 pixels - your images should have appropriate alt text">
+                    <p>discription of kid bike 1</p>
+                    </section>
+
+                    <section id="product11" class="hiddenItem">
+                        <h3>Heading Describing Item 11</h3>
+                        <img src="images/gears.jpg" alt=" text">
+                        <p>Paragraph describing road bike 2</p>
+                    </section>
+
+                        <section id="product9" class="hiddenItem">
+                            <h3>Heading Describing Item 9</h3>
+                            <img src="images/gears.jpg" alt=" text">
+                            <p>Paragraph describing mountain bike 3</p>
+                        </section>
+
+                <section id="kidsButtons">
+                    <h2 class="sr-only">Click on a Button to View a Product</h2>
+                    <button id="btn10">Discover Bike Name 1</button>
+                    <button id="btn11">Discover Bike Name 2</button>
+                    <button id="btn12">Discover Bike Name 3</button>
+                </section>
+             </section>
+
+<!--Game sent it roll double fours to win a bike-->
     
             <section id="game">
                     <h2>SEND IT!</h2>
@@ -62,25 +158,25 @@
                     <button id="gamePlay">Play!</button>
                     
             </section>
-
-            <section id="cart1">
+<!--Shopping cart Get the gear-->
+            <section id="cart">
                 <h2>Get the Gear!</h2>
                 <section id="products1">
                     <h3 class="sr-only">Our Products</h3>
                     <section>
-                        <img src="images/gears.jpg" alt="placeholder image that is 200 by 200 pixels - your images should have appropriate alt text">
+                        <img src="" alt="placeholder image that is 200 by 200 pixels - your images should have appropriate alt text">
                         <h4>Product Name 1</h4>
                         <p>$0.00</p>
                         <button id="pn1">Add To Cart</button>
                     </section>
                     <section>
-                        <img src="images/gears.jpg" alt="placeholder image that is 200 by 200 pixels - your images should have appropriate alt text">
+                        <img src="" alt="placeholder image that is 200 by 200 pixels - your images should have appropriate alt text">
                         <h4>Product Name 2</h4>
                         <p>$0.00</p>
                         <button id="pn2">Add To Cart</button>
                     </section>
                     <section>
-                        <img src="images/gears.jpg" alt="placeholder image that is 200 by 200 pixels - your images should have appropriate alt text">
+                        <img src="" alt="placeholder image that is 200 by 200 pixels - your images should have appropriate alt text">
                         <h4>Product Name 3</h4>
                         <p>$0.00</p>
                         <button id="pn3">Add To Cart</button>
@@ -100,7 +196,7 @@
                     <button id="checkout1">Checkout</button>
                 </section>
             </section>
-
+<!--contact form-->
             <section id="contact">
                 <h2>Contact Us</h2>
                 <p>If you have questions, problems or warranty issues please contact us</p>
@@ -139,9 +235,7 @@
             </section>
         </main>
         <footer>
-            <p>social media section</p>
-            <small>Website/mockup by Jennifer Pelzer</small>
-            
+            <p>Mockup website by Jennifer Pelzer</p>
         </footer>
         
         
